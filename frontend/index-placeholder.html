@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MoodFlix</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-purple-700 via-purple-800 to-indigo-950 text-white">
+  <header class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
+    <h1 class="text-2xl font-extrabold tracking-wide">MoodFlix</h1>
+    <nav class="space-x-6 text-sm">
+      <a class="underline font-semibold" href="index.html">Home</a>
+      <a class="hover:underline" href="genre.html">Genres</a>
+      <a class="hover:underline" href="#">Recommendations</a>
+      <a class="hover:underline" href="#">Profile</a>
+      <a class="px-3 py-1 rounded bg-white/10 hover:bg-white/20" href="#">Login</a>
+      <a class="px-3 py-1 rounded bg-red-600 hover:bg-red-700" href="#">Register</a>
+    </nav>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 py-16 text-center">
+    <h2 class="text-5xl md:text-6xl font-extrabold leading-tight">Let Your Mood Choose<br/>the Movie</h2>
+    <p class="mt-6 text-lg text-white/90">
+      Placeholder UI for integration & load balancer demo. Real UI will be merged here.
+    </p>
+    <div class="mt-8 flex gap-3 justify-center">
+      <input class="w-80 px-4 py-3 rounded bg-white/10 placeholder-white/60 focus:outline-none"
+             placeholder="How are you feeling?" />
+      <button class="px-6 py-3 rounded bg-red-600 hover:bg-red-700 font-semibold">
+        Get Recommendations
+      </button>
+    </div>
+  </main>
+
+  <!-- Instance marker for LB demo -->
+  <div id="mf-instance"
+       class="fixed bottom-3 right-3 px-3 py-1 rounded border border-white/30 bg-white/10 text-xs font-mono opacity-80">
+  </div>
+  <script>
+    const name = (window.INSTANCE_NAME || "Frontend-Placeholder");
+    document.getElementById("mf-instance").textContent = name;
+  </script>
+</body>
+</html>

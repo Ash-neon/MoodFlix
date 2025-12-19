@@ -1,0 +1,23 @@
+{
+  "name": "it490-2025-moodflix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattToegel/it490-2025-moodflix.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MattToegel/it490-2025-moodflix/issues"
+  },
+  "homepage": "https://github.com/MattToegel/it490-2025-moodflix#readme",
+  "dependencies": {
+    "amqplib": "^0.10.8"
+  }
+}
